@@ -1,0 +1,591 @@
+<html>
+     <!--
+        Estudiantes: Stefany Murillo - Andrea Navia - Marcela Pihedrahita
+        Fecha: 2022
+    -->
+    <title>¿QUÉ OPINAN LAS PERSONAS?</title>
+    <head>
+        <style>
+            ul { list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(5, 5, 5);}
+
+            li {float: left;}
+
+            li a {display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;}
+
+
+            li a:hover {
+                background-color: rgb(12, 168, 168);
+            }
+
+            a {font-family: "Calibri";}
+
+            .active {background-color: rgb(12, 168, 168);}
+
+            ul {position: fixed;
+                width: 100%}
+
+
+      
+        h1 {line-height: 0.8;}
+        h2 {line-height: 0;}
+        p {direction: ltr;}
+        p {line-height: 2;}
+        p {word-spacing: 5px;}
+        p {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+        h2 {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+    
+        
+        body {font-family: "Lucida Sans Unicode", "Lucida Grande",}
+        *{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(77, 73, 73, 0.5),
+        rgba(44, 43, 43, 0.5)
+    )
+    ,url("#");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/front-end.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    
+    }
+
+    #activar ~ .desplegable {display: none;overflow: hidden;} 
+#activar:checked ~ .desplegable {display: block;}
+
+.tabs {
+    position: relative;
+    min-height: 2500px;
+    clear: both;
+    margin: 25px 0;
+}
+.tab {
+    float: left;
+}
+.tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+}
+.tab[type=radio] {
+    display: none;
+}
+.content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.content >
+ * {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+[type=radio]:checked ~ label ~ .content >
+ * {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
+}
+table { font-family: “Lucida Sans Unicode”, “Lucida Grande”, Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 1000px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; } 
+        
+
+       
+
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+        
+         <ul>
+            <li><a href="C:\Users\stefa\Documents\comunicacion y lenguaje\index.html" >INICIO</a></li>
+            <li><a href="pagina2.html" class="active">¿QUÉ OPINAN LAS PERSONAS?</a></li>
+            <li><a href="pagina3.html">CONCLUSIÓN</a></li>
+           
+            
+         </ul>
+        </nav>
+        
+            <section id="nuestros-programas">
+                <div class="container">
+                    <center>
+                        <h1 style="font-family:Calibri; color:#fffdfd; font-size:80px">¿Qué opinan las personas, por que creen que el ser humano siente la necesidad de avanzar tecnológicamente?</h1>
+                    </center>
+                    
+                </div>
+                
+            <center>
+            <p style="font-family:Calibri; font-size:20px; ">
+
+                En el siguiente video se muestran tres entrevistas las cuales 
+
+                se le realizaron a tres de los más grandes magnates de la 
+
+                tecnología, Mark Elliot Zuckerberg, Jeffrey Preston Bezos  y 
+
+                Elon Reeve Musk, los cuales dan su opinión sobre el avance 
+
+                de la tecnología  y como esta se adaptó para avanzar junto con
+
+                la humanidad satisfaciendo las necesidades de la sociedad.  
+ 
+                 </p>
+            <br>
+            <br>
+            </center>
+            <center>
+                <video src="My Movie.mp4" controls="" type="video\My Movie.mp4" autoplay loop helght="800" width="800" align="left"></video>
+            </center>
+            
+        </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <input id="activar" name="activar" type="checkbox">
+    <label class="inputlabel" for="activar">Click para ver información técnica relacionada con el anterior video
+    </label>
+    <div class="desplegable">
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label for="tab-1" style="font-family:Calibri; font-size:20px; color:#0a0a0a; ">Mark Elliot Zuckerberg</label>
+                <div class="content">
+                    <p style="font-family:Calibri; font-size:20px; color:#0a0a0a;" align="left">
+                        Este video fue publicado en la red social Facebook Connect el día 28 octubre de 2021, por Mark Elliot Zuckerberg, en su propia cuenta. 
+                        <br>
+                        <br>
+                        REFERENCIA 
+                        <br>
+                        video original: En facebook Connect
+                        <br>
+                        https://www.facebook.com/zuck
+                        <br>
+                        <br>
+                        video subtitulado en español: En español presentación Mark Zuckerberg, Metaverso de Facebook en Connect 2021 | Krolus
+                        <br>
+                        https://www.youtube.com/watch?v=4v1uQ71zskU&t=269s
+                        
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label for="tab-2" style="font-family:Calibri; font-size:20px; color:#0a0a0a; ">Jeffrey Preston Bezos</label>
+                <div class="content">
+                    <p style="font-family:Calibri; font-size:20px; color:#0a0a0a;" align="left">
+                        Esta entrevista fue realizada en el canal televisivo Consumer News and Business Channel (CNBC) a Jeffrey Preston Bezos  el día 13 de julio del año 1999.
+                        <br>
+                        <br>
+                        REFERENCIA 
+                        <br>
+                        video original: Jeff Bezos In 1999 On Amazon's Plans Before The Dotcom Crash
+                        <br>
+                        https://www.youtube.com/watch?v=GltlJO56S1g&t=0s
+                        <br>
+                        <br>
+                        video subtitulado en español: ENTREVISTA QUE CAMBIARÁ TU VIDA - Español Latino [ Jeff Bezos cuestionado sobre Amazon 1999]
+                       <br>
+                       https://www.youtube.com/watch?v=1KVwNNLIuvs&t=52s
+
+                        
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label for="tab-3" style="font-family:Calibri; font-size:20px; color:#0a0a0a; ">Elon Reeve Musk</label>
+                <div class="content">
+                    <p style="font-family:Calibri; font-size:20px; color:#0a0a0a;" align="left">
+                        Esta entrevista fue realizada en La Cumbre del Gobierno Mundial (World Government Summit) a Elon Reeve Musk  en el año 2017, el entrevistador fue el Ministro de Asuntos del Gabinete de los Emiratos Árabes Unidos Mohammed Al Gergawi.
+                        <br>
+                        <br>
+                        REFERENCIA 
+                        <br>
+                        video original: Mohammad Al Gergawi in a conversation with Elon Musk during WGS17
+                        <br>
+                        https://www.youtube.com/watch?v=rCoFKUJ_8Yo
+                        <br>
+                        <br>
+                        video subtitulado en español: La aterradora predicción de Elon Musk para 2030 😱 | Elon Musk en español.
+                        https://www.youtube.com/watch?v=R2uB1pP9FDQ&t=155s
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <center> 
+        <p style="font-family:Calibri; font-size:20px; ">
+            
+            Zuckerberg, afirma que la tecnología nos dio la posibilidad de poder expresarnos, y expresarle al mundo las cosas que pensamos, al inicio la única forma de expresarse en las redes sociales era mediante texto y era necesario usar computadores puesto que en los inicios de las redes sociales todavía no existían celulares como los que usamos hoy en día, posteriormente el internet se apoderó del mundo y empezaron a hacer celulares mas y mas avanzados, entonces la forma de expresarse al mundo cambio de texto a imagenes y videos, es así como el avance de la tecnologia un dia va ha provocar que la forma de expresarse en las redes sociales cambie por completo, como ha pasado hasta dia de hoy.
+        </p>
+    </center> 
+    <center> 
+        <p style="font-family:Calibri; font-size:20px; ">
+            
+            según bezos, la tecnología existe para adaptarse a la sociedad y de esta forma puede suplir las necesidades, pero, también depende de la sociedad aceptar ese avance o no, en algunas ocasiones las personas no han apreciado nuevas tecnologías, por ejemplo en su dia el celular fue un invento bastante menospreciado al igual que el avión, por eso para bezos lo más importante cuando se crea una nueva tecnología, la cual sea capaz de revolucionar la forma en la que la sociedad ve la vida, se debe lograr convencer a las personas de la importancia del invento, hay que lograr que las personas vean lo necesario que es en su vida y solo así se logrará que la tecnología siga avanzando
+        </p>
+    </center> 
+    <center> 
+        <p style="font-family:Calibri; font-size:20px; ">
+            
+            para musk, el avance de la tecnología es lo que asegura el futuro y la supervivencia de la humanidad, para él, lo más importante en este momento es lograr que todas la sociedad utilice un medio de transporte sostenible y que seamos capaces de generar energía sostenible, según el magnate sudafricano el avanse tecnológico, específicamente el que está encaminado a crear una civilización espacial es la ficha clave para lograr la supervivencia de la humanidad, también en la entrevista habla de cómo cada día la tecnología avanza para lograr cosas tan simples como entretener. 
+        </p>
+    </center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    
+</div>
+</section>
+<center>
+    <h1 style="font-family:Calibri; color:#0a0a0a; font-size:100px">ENTREVISTAS</h1>
+</center>
+            <center> 
+                <p style="font-family:Calibri; font-size:18px; ">
+                    Se realizaron 20 entrevistas entre los días 28 Noviembre y 2 de Diciembre
+                    
+                    del año 2022,  a personas de la institución Universitaria 
+                    
+                    Antonio José Camacho, ubicada en la Ciudad de Cali Colombia, con 
+                    
+                    el fin de conocer Qué piensan las personas de diferentes edades    
+                       
+                    sobre el avance tecnológico y como este ha impactado en sus vidas.
+                </p>
+            </center> 
+            <center>
+                <video src="My Movie N2.mp4" controls="" type="video\My Movie N2.mp4" autoplay loop helght="800" width="800" align="left"></video>
+            </center>
+            <center>
+                <br>
+                <input id="activar" name="activar" type="checkbox">
+            <label class="inputlabel" for="activar">Click para ver información técnica relacionada con el anterior video 
+            </label>
+            <div class="desplegable">
+                <div class="tabs">
+                    <center>
+                    <div class="tab">
+                        <input type="radio" id="tab-7" name="tab-group-7" checked>
+                        <label for="tab-7" style="font-family:Calibri; font-size:20px; color:#0a0a0a; ">Video 2</label>
+                        <div class="content">
+                        <p style="font-family:Calibri; font-size:20px; color:#0a0a0a; " align="left">
+                            video de la institucion educativa antonio jose camacho 
+                            <br>
+                            video extraido de: UNIAJC
+                            <br>
+                            https://www.youtube.com/watch?v=3IpwqKHmlf4&t=205s
+                            <br>
+                            Video institucional de la UNIAJC, Institución Universitaria Antonio José Camacho. 45 Años
+                            <br>
+                         
+                        </p>
+                        <p style="font-family:Calibri; font-size:20px; color:#0a0a0a;" >
+                            En las entrevistas aparecieron un total de 20 personas, la pregunta. ¿Por qué el ser humano siente la necesidad de avanzar tecnológicamente? se le realizó a un total de 30 personas de las cuales 10 no sabían que responder, por ende no aparecieron en el video final.
+                        </p>
+                        <center>
+                            <img src="imagenes\imagen1.jpeg" width="600" height="400" >
+                        </center>
+                        <center>
+                            <img src="imagenes\imagen2.jpeg" width="600" height="400" >
+                        </center>
+                        <center>
+                            <img src="imagenes\imagen3.jpeg" width="600" height="400" >
+                        </center>
+                        <center>
+                            <img src="imagenes\imagen4.jpeg" width="600" height="400" >
+                        </center>
+                    </div>
+                </center>
+                </div>
+    
+            </div>
+                    
+                
+                </center>
+                <center> 
+                    <p style="font-family:Calibri; font-size:18px; ">
+                        
+                        A pesar de que la tecnología está tan presente en la sociedad, muchas personas no se han dado cuenta del impacto que esta tiene sobre sus vidas, para algunos fue difícil responder la pregunta que se les realizó, otros cuantos tuvieron que recurrir a la misma tecnología para poder dar respuesta a lo que se les preguntaba, esto nos da a entender que no sabemos lo importante que es la tecnología en nuestras vidas, hasta que esta misma nos lo dice. 
+                    </p>
+                </center> 
+                <center> 
+                    <p style="font-family:Calibri; font-size:18px; ">
+                        
+                        Muchos tienen una visión muy simple de lo que representa la tecnología en la sociedad, realmente, las personas más jóvenes son las que mas les cuesta hallar respuesta a la pregunta, el motivo, puede ser que nacieron durante el boom de la tecnología, todos los dispositivos tecnológicos actuales ya existían para cuando nacieron, no vieron como era la vida antes de estos inventos, por ende es mucho más difícil relacionarlo con algo que haya cambiado su vida.  
+                    </p>
+                </center>
+                
+        
+    <section id="nuestros-programas">
+        <div class="container">
+            <p style="font-family:Calibri; font-size:20px; " align="left">
+                <img src="https://i.ibb.co/h8yT8gM/Whats-App-Image-2022-09-07-at-4-35-15-PM.jpg" width="150" height="150" align="right">                
+                Copyright © 2022 
+            </p>
+            <br>
+            
+            <br>
+        </div>
+    </section>
+    <hr>
+    </body>
+</html>

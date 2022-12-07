@@ -1,0 +1,495 @@
+<html>
+     <!--
+        Estudiantes: Stefany Murillo - Andrea Navia - Marcela Pihedrahita
+        Fecha: 2022
+    -->
+    <title>CONCLUSIÓN</title>
+    <head>
+        <style>
+            ul { list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(5, 5, 5);}
+
+            li {float: left;}
+
+            li a {display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;}
+
+
+            li a:hover {
+                background-color: rgb(12, 168, 168);
+            }
+
+            a {font-family: "Calibri";}
+
+            .active {background-color: rgb(12, 168, 168);}
+
+            ul {position: fixed;
+                width: 100%}
+
+
+      
+        h1 {line-height: 0.8;}
+        h2 {line-height: 0;}
+        p {direction: ltr;}
+        p {line-height: 2;}
+        p {word-spacing: 5px;}
+        p {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+        h2 {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+    
+        
+        body {font-family: "Lucida Sans Unicode", "Lucida Grande",}
+
+        *{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(77, 73, 73, 0.5),
+        rgba(44, 43, 43, 0.5)
+    )
+    ,url("#");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/front-end.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    
+    }
+
+    #activar ~ .desplegable {display: none;overflow: hidden;} 
+#activar:checked ~ .desplegable {display: block;}
+
+.tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 25px 0;
+}
+.tab {
+    float: left;
+}
+.tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+}
+.tab[type=radio] {
+    display: none;
+}
+.content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.content >
+ * {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+[type=radio]:checked ~ label ~ .content >
+ * {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+       
+
+        </style>
+        
+    </head>
+    <body>
+        
+        <nav>
+        
+         <ul>
+            <li><a href="C:\Users\stefa\Documents\comunicacion y lenguaje\index.html" >INICIO</a></li>
+            <li><a href="pagina2.html">¿QUÉ OPINAN LAS PERSONAS?</a></li>
+            <li><a href="pagina3.html" class="active">CONCLUSIÓN</a></li>
+           
+            
+         </ul>
+        </nav>
+        <br>
+        <br>
+
+        <center>
+            <h1 style="font-family:Calibri; color:#0a0a0a; font-size:100px">CONCLUSIÓN</h1>
+        </center>
+            
+            <center> 
+                <p style="font-family:Calibri; font-size:20px; ">
+                    
+                    A lo largo de la historia el ser humano ha creado 
+                    
+                    distintos dispositivos que le permitan realizar sus 
+                    
+                    tareas cotidianas de una manera más fácil, el ser humano 
+                    
+                    siente la necesidad de avanzar tecnológicamente para poder 
+                    
+                    suplir sus necesidades, La tecnología es sumamente útil y 
+                    
+                    necesaria en nuestros tiempos. Gracias a ella, el ser humano 
+                    
+                    cuenta con miles de comodidades y experiencias que en tiempos 
+                    
+                    pasados eran inimaginables, el televisor se inventó para que el 
+                    
+                    ser humano tuviera un medio de entretenimiento en su casa y  el 
+                    
+                    avión para imitar el vuelo de las aves, posteriormente fue utilizado 
+                    
+                    como medio de transporte y actualmente no veríamos una vida sin el avión, 
+                    
+                    sin el avances tecnológico no se le hubiera logrado encontrar las vacunas 
+                    
+                    para muchas enfermedades lo cual conlleva a que  la esperanza de vida las 
+                    
+                    personas fuera mucho más corta.
+                </p>
+            </center> 
+            <center>
+                <img src="https://www.computerworld.es/archivos/202202/metaverso.jpg" width="500" height="400" >
+            </center>
+            <center>
+          
+            <br>
+            <br>
+            <section id="nuestros-programas">
+                <div class="container">
+                    
+                        <p style="font-family:Calibri; font-size:20px; " align="left">
+                            <img src="https://definicion.de/wp-content/uploads/2014/11/tecnologia-de-la-comunicacion.jpg" width="500" height="400" align="right">
+                            
+                            Sin lugar a dudas el nacimiento de la tecnología es producto de 
+                            
+                            las necesidades del hombre. Esta  surge como una manera de 
+                           
+                            favorecer el progreso de la humanidad y la evolución del hombre. 
+                            
+                            La mayoría de las nuevas tecnologías surgen como imitación de la 
+                            
+                            mente humana, esto nos demuestra que sin todos los aparatos 
+                            
+                            tecnológicos que actualmente se utilizan claramente la vida sería 
+                            
+                            más compleja. Está en la naturaleza propia del ser humano realizar 
+                            
+                            creaciones ya sean de ideas propia o inspiradas en lo que ya fue 
+                            
+                            creado pero aún así este necesita crear para avanzar.
+                            
+                        </p>
+                       
+                        <center> 
+                            <p style="font-family:Calibri; font-size:20px; ">
+                                
+                                El avance de la tecnología, cada día va facilitando más 
+                                
+                                la vida de las personas, la tecnología  cambió la forma 
+                                
+                                de aprendizaje, la forma de trabajar y claramente la 
+                                
+                                forma en la que vemos la vida. Durante todo ese proceso 
+                                
+                                de evolución se han ido  perdiendo costumbres, muchos 
+                                
+                                trabajos ya son automatizados siendo realizados por robots  
+                                
+                                y cada día las personas buscan adquirir competencias 
+                                
+                                relacionadas con la interacción offline ya que esta es parte 
+                                
+                                de nuestra naturaleza humana.
+                            </p>
+                        </center> 
+                    
+                </div>
+            </section>
+            <center> 
+                <p style="font-family:Calibri; font-size:20px; ">
+                    
+                    A pesar del gran impacto de la tecnología, muchas personas se niegan a permitir que esta avance, los seres humanos no somos capaces de darnos cuenta de la importancia de la tecnología  hasta que no es indispensable para seguir realizando tareas cotidianas. Además de esto, la tecnología nos dio la posibilidad de poder expresarnos, y expresarle al mundo las cosas que pensamos, aunque primero se debe lograr convencer a las personas de la importancia de la nueva tecnología. 
+                </p>
+            </center> 
+    
+    
+            <p style="font-family:Calibri; font-size:20px; " align="right">
+                <img src="https://www.elcolombiano.com/binrepository/847x565/34c0/780d565/none/11101/YOGV/shutterstock-670459006_39743308_20220401183005.jpg" width="500" height="400" align="left">
+                la tecnología no va a dejar de avanzar, cada dia van a salir nuevas tecnologías que sigan facilitando nuestras vidas, es probable que llegue el momento en el que las máquinas reemplacen a las personas en la gran mayoría de trabajos, sin lugar a dudas la ultima profesión en ser reemplazada por la tecnología serán todas las profesiones dedicadas a su desarrollo, aun así ya hay registro de inteligencias artificiales que pueden aprender solas e incluso programarse solas, sin lugar a dudas la gran conclusión es, la humanidad necesita a la tecnología para garantizar su supervivencia y avance.  
+                
+            </p>
+           
+    
+            <section id="nuestros-programas">
+                <div class="container">
+                    <h1>REFERENCIAS</h1>
+                    <p style="font-family:Calibri; font-size:20px; " align="left">
+
+                        Gutiérrez, P (30 de marzo de 2012). El origen de: El avión. fayerwayer. 
+                        https://www.fayerwayer.com/2012/03/el-origen-de-el-avion/
+                        <br>
+                        <br> 
+                        Bintaned, M (2014). Historia de la aviación comercial desde 1909 hasta nuestros días. [Archivo PDF]. 
+                        https://dspace.uib.es/xmlui/bitstream/handle/11201/149004/Bintaned_Ara_Martin.pdf?sequence=1&isAllowed=y
+                        <br>
+                        <br> 
+                        Pérez, A. (24 de febrero de 2016).  ¿Cómo nació la tarjeta de crédito? El dinero de plástico que surgió de un olvido. 
+                        eleconomista. https://www.eleconomista.es/empresas-finanzas/consumo/noticias/7373612/02/16/Como-nacio-la-tarjeta-de-credito
+                        -El-dinero-de-plastico-que-surgio-de-un-olvido.html
+                        <br>
+                        <br> 
+                        Romero, S. (19 de noviembre de 2019). ¿Dónde se transmitió la primera imagen de TV?. muyinteresante. 
+                        https://www.muyinteresante.es/curiosidades/preguntas-respuestas/idonde-se-transmitio-la-primera-imagen-de-tv
+                        <br>
+                        <br>
+                     </p>
+    
+                    </div>
+
+                </section>
+        <br>
+        <hr>
+        <br>
+        <p style="font-family:Calibri; font-size:20px; " align="left">
+            <img src="https://i.ibb.co/h8yT8gM/Whats-App-Image-2022-09-07-at-4-35-15-PM.jpg" width="150" height="150" align="right">                
+            Copyright © 2022 
+        </p>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
